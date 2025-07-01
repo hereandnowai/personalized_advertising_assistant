@@ -1,0 +1,9 @@
+export { default as LinkedInIcon } from './LinkedInIcon';
+export { default as InstagramIcon } from './InstagramIcon';
+export { default as GitHubIcon } from './GitHubIcon';
+export { default as XIcon } from './XIcon';
+export { default as YouTubeIcon } from './YouTubeIcon';
+export { default as BlogIcon } from './BlogIcon';
+export { default as DownloadIcon } from './DownloadIcon';
+export { default as MicIcon } from './MicIcon';
+export { default as MicOffIcon } from './MicOffIcon';

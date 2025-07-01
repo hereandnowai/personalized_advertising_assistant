@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HERE AND NOW AI Assistant</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/favicon-logo-with-name.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Enable class-based dark mode
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#FFDF00',
+            'brand-secondary': '#004040',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Custom scrollbar for webkit browsers */
+    .scrollbar-thin {
+      scrollbar-width: thin; /* For Firefox */
+      scrollbar-color: #4B5563 #1F2937; /* thumb and track color for Firefox */
+    }
+    .dark .scrollbar-thin { /* Dark mode scrollbar colors */
+       scrollbar-color: #4B5563 #1F2937;
+    }
+    .light .scrollbar-thin { /* Light mode scrollbar colors */
+       scrollbar-color: #A0AEC0 #E2E8F0;
+    }
+
+    .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+      background-color: #4B5563;
+      border-radius: 4px;
+    }
+    .dark .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+      background-color: #4B5563;
+    }
+    .light .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+      background-color: #A0AEC0; /* Light mode thumb */
+    }
+
+    .scrollbar-track-gray-800::-webkit-scrollbar-track {
+      background-color: #1F2937;
+      border-radius: 4px;
+    }
+    .dark .scrollbar-track-gray-800::-webkit-scrollbar-track {
+      background-color: #1F2937;
+    }
+    .light .scrollbar-track-gray-800::-webkit-scrollbar-track {
+      background-color: #E2E8F0; /* Light mode track */
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "@/": "./"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white dark:bg-gray-900"> <!-- Default to light, dark class will override -->
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
