@@ -12,8 +12,7 @@
     "react-dom": "^19.1.0",
     "react": "^19.1.0",
     "@google/genai": "^1.5.1",
-    "jspdf": "2.5.1",
-    "@": "latest"
+    "jspdf": "2.5.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
